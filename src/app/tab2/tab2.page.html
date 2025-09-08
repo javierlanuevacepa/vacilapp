@@ -1,0 +1,53 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      VacilApp
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+
+
+
+  <ion-refresher slot="fixed" (ionRefresh)="handleRefresh($event)">
+    <ion-refresher-content></ion-refresher-content>
+  </ion-refresher>
+
+
+
+  <div id="mapcontainer">
+    <div id="map" style="height: 50%; width: 75%;"></div>
+  </div>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>VACILES COTIZADOS 🔥</ion-card-title>
+      <ion-card-subtitle>Los voucher exclusivo</ion-card-subtitle>
+    </ion-card-header>
+  
+    <ion-card-content>
+
+      <ion-label *ngIf="eventos.length===0">Sin carretes cerca tuyo, que fome...👎</ion-label>
+
+      <swiper-container *ngIf="eventos.length>0">
+        <swiper-slide  *ngFor="let mark of eventos">
+          <ion-card  class="hot-card"  (click)="enviarDetalles(mark);">
+            <img alt="flyer" src={{mark.flyer}} />
+            <ion-card-header>
+              <ion-card-title class="neon-text" >{{mark.nombreCarrete}}</ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+                  <ion-label class="neon-text">Fecha:{{mark.fechaCarrete}}</ion-label> <br>
+                  <ion-label class="neon-text">Asistentes:{{mark.likesEventoSaa}}</ion-label>
+            </ion-card-content>
+          </ion-card>
+        </swiper-slide>
+      </swiper-container>
+
+      Los vaciles mas hot 🔥
+    </ion-card-content>
+  </ion-card>
+  
+</ion-content>

@@ -1,0 +1,23 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      VacilApp
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  
+  <ion-segment value="default">
+    <ion-segment-button value="default" (click)="selecmensin = 0;" >
+      <ion-label>Carrete</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="segment" (click)="selecmensin = 1;">
+      <ion-label>Organizador(a)</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+  <ion-searchbar animated="true" placeholder="Buscar por {{segmens[selecmensin]}}"></ion-searchbar>
+
+
+  
+</ion-content>

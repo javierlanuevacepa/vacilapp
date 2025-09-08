@@ -1,0 +1,7 @@
+{
+  "name": "vacilapp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

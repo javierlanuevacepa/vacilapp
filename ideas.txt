@@ -1,0 +1,58 @@
+Va a haber una seccion llamada 
+mambos cotizados
+
+donde estaran los vaciles que mas gente le da 
+like o "ire"  los que etan asi como "hot"
+ponerle unas llamas o algo asi para darle mas color 
+y se vea llamativo
+
+las "tendencias" se consideraran los post
+que en poco tiempo de ser publicado recibieron 
+hartos likes y estan recibiendo likes
+
+
+poner algo que reconozca la direccion del fluyer
+que coincida con la direccfion brindada
+
+que en el mapa solo salgan los que sean 
+proximos a 10 dias 
+
+los que sean mas de eso saldran en otra
+seccion de carretes o en un calendario
+o algo asi 
+
+
+los que sean hoy de color fuego
+
+los que sean otro dia de otro color 
+
+
+
+el boton de asistire funcionara como like
+
+CON NOMINATIM API INGRESAS DIRECCION Y TE DEVUELVE
+LATITUD ETC
+
+que te pueda redireccionar para comprar las 
+entradas
+
+
+"Recintos"
+
+que literal hayan recintos ojala discos o etcx
+ con sus cosas en las q puedas ver su calendario
+de vaciles o eventos
+y en una de esas contactar para arrendar
+
+
+darle una notificacion felicidades a los que 
+esteb eb tendencia dejarlos persoinalizar sus card
+como quieran
+
+si no hacen nada no sresponden card estandar hot
+
+
+los vaciles cotizados son los vaciles tendencia 
+mas cercanos en un radio de 15 km
+
+

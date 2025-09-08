@@ -1,0 +1,55 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>detalles</ion-title>
+
+    <ion-buttons slot="start">
+      <ion-button [routerLink]="['/home']">Volver</ion-button>
+    </ion-buttons>
+
+  </ion-toolbar>
+
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+
+
+  <ion-card>
+    <img alt="flyerPhoto" src={{eventoDetalle.flyer}} />
+    <ion-card-header>
+      <ion-card-title>{{eventoDetalle.nombreCarrete}}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list [inset]="true" lines="none">
+        <ion-item>
+          <ion-label>{{eventoDetalle.descripcion}}</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label>Fecha:{{eventoDetalle.fechaCarrete}}</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label>Direccion:{{eventoDetalle.direccion}}</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label>Organizador:{{eventoDetalle.userNameOrganizador}}</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label>Asistentes:{{eventoDetalle.likesEventoSaa}}</ion-label>
+        </ion-item>
+      </ion-list>
+
+
+      
+      <ion-button (click)="likeCarrret()">
+        Quiero asistir
+        <ion-icon slot="end" name="heart"></ion-icon>
+      </ion-button>
+
+    </ion-card-content>
+  </ion-card>
+
+
+
+
+
+</ion-content>
